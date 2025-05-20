@@ -1,0 +1,250 @@
+:root {
+    --primary: #4a6fa5;
+    --secondary: #166088;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+}
+
+
+.participant-card {
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--primary);
+    padding-left: 1rem;
+}
+
+.submission-form {
+    margin: 1rem 0;
+}
+
+.submission-form .form-group {
+    margin-bottom: 0.5rem;
+}
+
+.vote-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+/* Add these styles to your existing CSS */
+.back-button {
+    background-color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.create-button {
+    background-color: var(--success);
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+}
+
+.add-participant {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#participants-list {
+    list-style-type: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#participants-list li {
+    padding: 0.25rem 0.5rem;
+    background-color: #f8f9fa;
+    margin-bottom: 0.25rem;
+    border-radius: 4px;
+}
+
+#create-challenge-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+nav button {
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    opacity: 0.9;
+}
+
+#app-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.btn-success {
+    background-color: var(--success);
+}
+
+.btn-danger {
+    background-color: var(--danger);
+}
+
+.btn-warning {
+    background-color: var(--warning);
+    color: var(--dark);
+}
+
+.timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--secondary);
+    margin: 1rem 0;
+}
+
+.submission {
+    border: 1px solid #eee;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.submission img {
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.vote-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.leaderboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.leaderboard th, .leaderboard td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.leaderboard th {
+    background-color: var(--primary);
+    color: white;
+}
+
+.leaderboard tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.challenge-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.challenge-card {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.challenge-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .challenge-list {
+        grid-template-columns: 1fr;
+    }
+}
